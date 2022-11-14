@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -31,13 +32,21 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to leonardo dicpario!</Heading>
       </Oscar>
+      <hr />
       <Button
         handleClick={(event, id) => {
           console.log(event, id);
           alert("hello world!");
         }}
       />
-      <Input value="" handleChange={(event) => console.log(event.target.value)} />
+      <Input
+        value=""
+        handleChange={(event) => console.log(event.target.value)}
+      />
+      <hr />
+      <Container
+        styles={{ border: "1px solid red", padding: "1rem", margin: "2rem" }}
+      />
     </div>
   );
 }

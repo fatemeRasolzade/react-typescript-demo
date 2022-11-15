@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/Button";
+import { ClassCounter } from "./components/class/ClassCounter";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
@@ -68,6 +69,7 @@ function App() {
         <User />
       </UserContextProvider>
       <hr />
+      <ClassCounter message="The count value is" />
     </div>
   );
 }

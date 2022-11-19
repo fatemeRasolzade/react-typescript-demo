@@ -7,6 +7,7 @@ import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { UserContextProvider } from "./components/context/UserContext";
+import List from "./components/generics/List";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -75,6 +76,14 @@ function App() {
       <hr />
       <Private isLoggedIn={true} component={Profile} />
       <hr />
+      <List
+        items={[
+          { id: 1, firstName: "fateme", lastName: "rasolzade" },
+          { id: 2, firstName: "fateme", lastName: "rasolzade" },
+          { id: 3, firstName: "fateme", lastName: "rasolzade" },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }

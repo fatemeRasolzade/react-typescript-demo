@@ -1,4 +1,6 @@
 import "./App.css";
+import Private from "./components/Auth/Private";
+import Profile from "./components/Auth/Profile";
 import Button from "./components/Button";
 import { ClassCounter } from "./components/class/ClassCounter";
 import Container from "./components/Container";
@@ -70,6 +72,9 @@ function App() {
       </UserContextProvider>
       <hr />
       <ClassCounter message="The count value is" />
+      <hr />
+      <Private isLoggedIn={true} component={Profile} />
+      <hr />
     </div>
   );
 }

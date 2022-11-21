@@ -19,6 +19,7 @@ import Counter from "./components/state/Counter";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
 import Status from "./components/Status";
+import Toast from "./components/templateliterals/Toast";
 
 function App() {
   const personName = {
@@ -87,6 +88,8 @@ function App() {
       />
       <hr />
       <RandomNumber value={10} isPositive />
+      <hr />
+      <Toast position="center" />
     </div>
   );
 }

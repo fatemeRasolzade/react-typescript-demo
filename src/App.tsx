@@ -15,6 +15,7 @@ import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Text from "./components/polymorphic/Text";
 import RandomNumber from "./components/restriction/RandomNumber";
 import Counter from "./components/state/Counter";
 import LoggedIn from "./components/state/LoggedIn";
@@ -93,6 +94,16 @@ function App() {
       <Toast position="center" />
       <hr />
       <CustomButton variant="primary">Primary Button</CustomButton>
+      <hr />
+      <Text as="h1" size="lg">
+        Hading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
